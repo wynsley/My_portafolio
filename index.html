@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portafolio</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+
+    <!--box icons-->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+<!--diseño encabezado-->
+    <header class="header" id="idHeader">
+        <div class="header__logo">
+            <div class="header__logo__animate">
+                <div class="header__logo__animate__green--4 flame"></div>
+                <div class="header__logo__animate__green--1 flame"></div>
+                <div class="header__logo__animate__green--2 flame"></div>
+                <div class="header__logo__animate__green--3 flame"></div>
+                <div class="header__logo__animate__white flame"></div>
+                <div class="header__logo__animate__blue circle"></div>
+                <div class="header__logo__animate__black circle"></div>
+            </div>
+            
+            <a href="/" class="header__logo__name">Wynsley<span class="animateLo" style="--i:1;"></span></a>
+        </div>
+
+        <i class='bx bx-menu' id="menu-icon"><span class="animateLo" style="--i:2;"></span></i>
+
+        <nav class="navbar" id="navbar">
+            <ul class="navbar__List">
+                <li><a href="#home" class="navbar__list__link active">Inicio</a></li>
+                <li> <a href="#about " class="navbar__list__link">Sobre mi</a></li>
+                <li><a href="#skills" class="navbar__list__link">Habilidades</a></li>
+                <li><a href="#experience" class="navbar__list__link">Experiencia</a></li>
+                <li><a href="#project" class="navbar__list__link">Proyectos</a></li>
+                <li><a href="#contact" class="navbar__list__link">Contacto</a></li>
+            </ul>
+
+            <span class="active-nav"></span>
+            <span class="animateLo" style="--i:2;"></span>
+        </nav>
+    </header>
+    <!-- seccion de inicio-------------------------------------------------------------------------------->  
+    <section class="home " id="home">
+        <div class="home__Content scroll-scale">
+            <h1 >Hola, soy <span>Wynsley Durán</span></h1>
+            <div class="home__content__animate">
+                <h3>Desarrollador Frontend</h3>
+            </div>
+            <p>
+                Mi trabajo no solo se trata de escribir código, sino de contruir interfaces
+                que conecte, que transmitan confianza y que conviertan visitantes en usuarios satisfechos.
+                Si buscas a alguien que no solo programe, sino que entienda lo que tu proyecto necesita 
+                para destacar y ser recordado aquí me tienes.
+            </p>
+            <div class="home__content__btn-box">
+                <a href="#" class="home__content__btn-box__button">Contrátame</a>
+                <a href="#" class="home__content__btn-box__button">Hablemos</a>
+            </div>
+        </div>
+
+        <!--redes sociales-->
+        <div class="home__redes">
+            <a href="#"><i class='bx bxl-facebook' ></i></a>
+            <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+        </div>
+        
+        <div class="home__image">
+            <div class="home__image__box">
+                <img class="home__image__box__img" src="/imgs/img_perfil.png" alt="perfil">
+            </div>
+
+            <div class="home__image__shape">
+                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" heigth="100%" id="blobSvg">
+                    <path  fill="#15ff00">
+                        <animate attributeName="d"
+                            dur="10000ms"
+                            repeatCount="indefinite"
+                            values="
+                            M399,318.5Q359,387,291.5,376.5Q224,366,158,346Q92,326,95,251.5Q98,177,153,122Q208,67,279,95.5Q350,124,394.5,187Q439,250,399,318.5Z;
+
+                            M364,285.5Q306,321,268.5,326.5Q231,332,132,343Q33,354,67,266Q101,178,148,93.5Q195,9,273,66Q351,123,386.5,186.5Q422,250,364,285.5Z;
+
+                            M346,315Q354,380,290.5,365Q227,350,151.5,342Q76,334,99.5,261.5Q123,189,178,182Q233,175,289,153Q345,131,341.5,190.5Q338,250,346,315Z;
+
+                            M438,330.5Q378,411,303,378Q228,345,160,335.5Q92,326,72,240.5Q52,155,134.5,129.5Q217,104,311,79.5Q405,55,451.5,152.5Q498,250,438,330.5Z;
+
+                            M427,335.5Q387,421,298,424.5Q209,428,130,387Q51,346,93,270.5Q135,195,176.5,153Q218,111,274.5,130Q331,149,399,199.5Q467,250,427,335.5Z;
+                           
+                            M420,307.5Q342,365,275,399.5Q208,434,174,368.5Q140,303,98.5,230Q57,157,134,118.5Q211,80,277.5,106Q344,132,421,191Q498,250,420,307.5Z;
+                           
+                            M418,337.5Q389,425,306.5,394.5Q224,364,188.5,330.5Q153,297,116,232Q79,167,151,149.5Q223,132,305,105Q387,78,417,164Q447,250,418,337.5Z;
+
+                            M382,302Q333,354,277,365Q221,376,163.5,348Q106,320,71,233.5Q36,147,120.5,99Q205,51,299.5,60.5Q394,70,412.5,160Q431,250,382,302Z;
+                            M399,318.5Q359,387,291.5,376.5Q224,366,158,346Q92,326,95,251.5Q98,177,153,122Q208,67,279,95.5Q350,124,394.5,187Q439,250,399,318.5Z;
+                            "
+                        />
+                    </path>
+                </svg>
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <!--Sobre mi-->
+
+    <section class="about" id="about">
+        <h2 class="about__title">Sobre  <span class="about__title--2">Mi!</span></h2>
+
+        <div class="about__img">
+            <img src="/imgs/img_perfil.png" alt="Imagene perfil">
+            <span class="about__spin"></span>
+        </div>
+
+        <div class="about__content">
+            <h3 class="about__content__title">Desarrollador Frontend!</h3>
+
+            <p class="about__content__description">¡Hola! Soy Wynsley Jhackson, un apacionado desarrollador Frontend
+                enfocado en trasformar ideas en experiencias digitales atractivas y funcionales. Me especializo en constuir
+                interfaces modernas, intuitivas y responsivas dque no solo se ven bien, sino que también funcionen de manera
+                fluida en cualqeuir dispositivo.</p>
+
+            <div class="about__content__box btns">
+                <a href="#" class="about__content__box__btn">Leer más</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!--------------Habilidades-------------------------------------->
+
+    <section class="skills" id="skills">
+        
+        <h2 class="skills__title"><span>Mis </span>Habilidades</h2>
+
+        <div class="skills__main">
+            <div class="skills__main__left">
+                <h3> Habilidades Técnicas</h3>
+                <div class="skills__main__left__var">
+                    <div class="skills__main__left__var__info">
+                        <p>HTML</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>
+                </div>
+                <div class="skills__main__left__var">
+                    <div class="skills__main__left__var__info">
+                        <p>CSS</p>
+                        <p>70%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="css"></span>
+                    </div>
+                </div>
+                <div class="skills__main__left__var">
+                    <div class="skills__main__left__var__info">
+                        <p>JavaScript</p>
+                        <p>40%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="javascript"></span>
+                    </div>
+                </div>
+                <div class="skills__main__left__var">
+                    <div class="skills__main__left__var__info">
+                        <p>Figma</p>
+                        <p>40%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="figma"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="skills__main__right">
+                <h3> Habilidades Profecionales</h3>
+                <div class="skill__main__rignt_profecnl">
+                    <div class="skills__main__right__profecnl__box">
+                        <div class="skills__main__right__profecnl__box__circle" id="circle" data-dots="80" data-percent="90"></div>
+                        <div class="skills__main__right__profecnl__box__text">
+                            <big>90%</big>
+                            <small>Trabajo en Equipo</small>
+                        </div>
+                    </div>
+                    <div class="skills__main__right__profecnl__box">
+                        <div class="skills__main__right__profecnl__box__circle" id="circle" data-dots="80" data-percent="80"></div>
+                        <div class="skills__main__right__profecnl__box__text">
+                            <big>80%</big>
+                            <small>Creatividad</small>
+                        </div>
+                    </div>
+
+                    <div class="skills__main__right__profecnl__box">
+                        <div class="skills__main__right__profecnl__box__circle" id="circle" data-dots="80" data-percent="70"></div>
+                        <div class="skills__main__right__profecnl__box__text">
+                            <big>70%</big>
+                            <small>Comunicación</small>
+                        </div>
+                    </div>
+
+                    <div class="skills__main__right__profecnl__box">
+                        <div class="skills__main__right__profecnl__box__circle" id="circle" data-dots="80" data-percent="50"></div>
+                        <div class="skills__main__right__profecnl__box__text">
+                            <big>50%</big>
+                            <small>Gestión de Proyectos</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Experiencia------------------------------------------------------------------>
+
+    <section class="experience" id="experience">
+        <h2 class="experience__title"> Mi <span>viaje</span></h2>
+
+        <div class="experience-row">
+            <div class="experince-row__column">
+                <h3 class="experince-row__column__title">Experiencia</h3>
+
+                 <div class="experince-row__column__box">
+                    <div class="experince-row__column__box__content">
+                        <div class="experince-row__column__box__content__cnt">
+                            <div class="experince-row__column__box__content__cnt__year"><i class='bx bxs-calendar'></i> 2025-2026</div>
+                            <h3>Desarrollo y Diseño Web</h3>
+                            <p>He desarrollado sitios web utilizando HTML, CSS y JavaScript, combinando herramientas de diseño como Figma
+                                 y Balsamiq para la creación de prototipos y estructuras visuales. Uno de los principales proyectos ha sido
+                                  el diseño y desarrollo de la página web institucional de mi centro de estudios, integrando tanto la parte
+                                   visual como funcional del sitio.</p>
+                        </div>
+                    </div>
+                    <div class="experince-row__column__box__content">
+                        <div class="experince-row__column__box__content__cnt">
+                            <div class="experince-row__column__box__content__cnt__year"><i class='bx bxs-calendar'></i> 2025-2026</div>
+                            <h3>Gestión de Redes</h3>
+                            <p>Tengo conocimientos en subnetting de redes, instalación y configuración de routers y switches, así como 
+                                en el diseño y simulación de redes utilizando herramientas como Cisco Packet Tracer y GNS3. También realizo 
+                                el cambio y armado de cables RJ45 según el tipo de conexión requerida, asegurando la correcta conectividad y
+                                 funcionamiento de la infraestructura de red.</p>
+                        </div>
+                    </div>
+                    <div class="experince-row__column__box__content">
+                        <div class="experince-row__column__box__content__cnt">
+                            <div class="experince-row__column__box__content__cnt__year"><i class='bx bxs-calendar'></i> 2026-2027</div>
+                            <h3>Soporte Técnico</h3>
+                            <p>Cuento con experiencia en la instalación de programas, antivirus y sistemas operativos, así como en el
+                                 formateo de PCs y laptops. Además, realizo cambios de componentes como discos duros y memorias RAM, y 
+                                 aplico mantenimiento para garantizar el buen funcionamiento y la 
+                                 optimización de los equipos.</p>
+                        </div>
+                    </div>
+                 </div>   
+            </div>
+            <div class="experince-row__column">
+                <h3 class="experince-row__column__title">Educación</h3>
+
+                 <div class="experince-row__column__box">
+                    <div class="experince-row__column__box__content">
+                        <div class="experince-row__column__box__content__cnt">
+                            <div class="experince-row__column__box__content__cnt__year"><i class='bx bxs-calendar'></i> 2024-2025</div>
+                            <h3>Instituto Privado Celendín</h3>
+                            <p>Durante mis primeros dos semestres he desarrollado conocimientos en soporte técnico, mantenimiento de hardware
+                                 y software, así como en redes. Manejo conceptos de diseño y gestión de redes, configuración de dispositivos, 
+                                 subneteo (subnetting) y conectividad básica, lo que me permite identificar y resolver fallas tanto a nivel de 
+                                 equipos como de infraestructura de red.</p>
+                        </div>
+                    </div>
+                    <div class="experince-row__column__box__content">
+                        <div class="experince-row__column__box__content__cnt">
+                            <div class="experince-row__column__box__content__cnt__year"><i class='bx bxs-calendar'></i> 2025-2026</div>
+                            <h3>Instituto Privado Celendín</h3>
+                            <p>En los semestres 25-26 he fortalecido mis conocimientos en desarrollo de software, utilizando herramientas
+                                 como HTML, CSS, JavaScript y Python. He trabajado en la creación de prototipos con Balsamiq y Figma, diseño 
+                                 en UML, y he adquirido bases en el manejo de bases de datos con SQL Server.</p>
+                        </div>
+                    </div>
+                    <div class="experince-row__column__box__content">
+                        <div class="experince-row__column__box__content__cnt">
+                            <div class="experince-row__column__box__content__cnt__year"><i class='bx bxs-calendar'></i> 2026-2027</div>
+                            <h3>Instituto Privado Celendín</h3>
+                            <p>Durante los semestres 26-27 he adquirido conocimientos en diseño gráfico y edición y producción de video, así como en 
+                                el uso de herramientas de desarrollo como Unreal Engine y tecnologías web como HTML, CSS, JavaScript y 
+                                Express, MySQL y SQL Serve, integrando tanto el aspecto visual como funcional en proyectos interactivos .</p>
+                        </div>
+                    </div>
+                 </div>   
+            </div>
+            
+            <!--Servicios-->
+            <div class="services">
+                <h3 class="services__title">Nuestros <span>Sevicios</span></h3>
+
+                <div class="services__container ">
+                    <div class="services__container__box">
+                        <i class='bx bx-code-alt' ></i>
+                        <h4>Desarrollo Web</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quisquam similique 
+                            aut mollitia, veniam laborum, molestiae maxime provident debitis nihil in enim odio recusandae nam.</p>
+                        <a href="#" class="services__container__box__btn"> Leer Más</a>
+                    </div>
+
+                    <div class="services__container__box">
+                        <i class='bx bx-paint' ></i>
+                        <h4>Diseño Gráfico</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quisquam similique 
+                            aut mollitia, veniam laborum, molestiae maxime provident debitis nihil in enim odio recusandae nam.</p>
+                        <a href="#" class="services__container__box__btn"> Leer Más</a>
+                    </div>
+
+                    <div class="services__container__box">
+                        <i class='bx bx-network-chart' ></i>
+                        <h4>Gestión de Redes</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quisquam similique 
+                            aut mollitia, veniam laborum, molestiae maxime provident blad hat nomiont eirr fiuruete jfdijeu jrt ueroa mpgerien.</p>
+                        <a href="#" class="services__container__box__btn"> Leer Más</a>
+                    </div>
+
+                    <div class="services__container__box">
+                        <i class='bx bxs-wrench'></i>
+                        <h4>Soporte Técnico</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores 
+                            doloremque dicta aut! Officiis, deserunt consequuntur necessitatibus, 
+                            perspiciatis non magnam molestiae autem, est quod iste qui! </p>
+                        <a href="#" class="services__container__box__btn"> Leer Más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Proyectos------------------------------------------------------------------------------->
+
+    <section class="project" id="project">
+        <h2 class="project__title"> Mis <span>Proyectos</span></h2>
+
+        <div class="project__container">
+            <div class="projects__container__filtrer">
+                <a href="#" class="projects__container__filtrer__btn active1" >Todo</a>
+                <a href="#" class="projects__container__filtrer__btn">Productos</a>
+                <a href="#" class="projects__container__filtrer__btn">Interactuando</a>
+                <a href="#" class="projects__container__filtrer__btn">App Web</a>
+            </div>
+            
+            <div class="projects__container__gallery">
+                <div class="projects__container__gallery__port--box">
+                    <div class="projects__container__gallery__port--box__img">
+                        <img src="/imgs/project1.jpg" alt="Imagene-proyecto1">
+                    </div>
+                    <div class="projects__container__gallery__port--box__content">
+                        <h3>Diseño Gráfico</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Cum error sapiente totam praesentium pariatur eligendi
+                             necessitatibus! Totam nemo eius excepturi?
+                        </p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="projects__container__gallery__port--box">
+                    <div class="projects__container__gallery__port--box__img">
+                        <img src="/imgs/project2.jpg" alt="Imagene-proyecto2">
+                    </div>
+                    <div class="projects__container__gallery__port--box__content">
+                        <h3>Diseño Gráfico</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Cum error sapiente totam praesentium pariatur eligendi
+                             necessitatibus! Totam nemo eius excepturi?
+                        </p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="projects__container__gallery__port--box">
+                    <div class="projects__container__gallery__port--box__img">
+                        <img src="/imgs/project3.jpeg" alt="Imagene-proyecto3">
+                    </div>
+                    <div class="projects__container__gallery__port--box__content">
+                        <h3>Diseño Gráfico</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Cum error sapiente totam praesentium pariatur eligendi
+                             necessitatibus! Totam nemo eius excepturi?
+                        </p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="projects__container__gallery__port--box">
+                    <div class="projects__container__gallery__port--box__img">
+                        <img src="/imgs/project4.jpg" alt="Imagene-proyecto4">
+                    </div>
+                    <div class="projects__container__gallery__port--box__content">
+                        <h3>Diseño Gráfico</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Cum error sapiente totam praesentium pariatur eligendi
+                             necessitatibus! Totam nemo eius excepturi?
+                        </p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="projects__container__gallery__port--box">
+                    <div class="projects__container__gallery__port--box__img">
+                        <img src="/imgs/project5.png" alt="Imagene-proyecto5">
+                    </div>
+                    <div class="projects__container__gallery__port--box__content">
+                        <h3>Diseño Gráfico</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Cum error sapiente totam praesentium pariatur eligendi
+                             necessitatibus! Totam nemo eius excepturi?
+                        </p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+
+                <div class="projects__container__gallery__port--box">
+                    <div class="projects__container__gallery__port--box__img">
+                        <img src="/imgs/project6.png" alt="Imagene-proyecto6">
+                    </div>
+                    <div class="projects__container__gallery__port--box__content">
+                        <h3>Diseño Gráfico</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Cum error sapiente totam praesentium pariatur eligendi
+                             necessitatibus! Totam nemo eius excepturi?
+                        </p>
+                        <a href="#"><i class='bx bx-link-external'></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contacto---------------------------------------------------------------------------->
+    <section class="contact" id="contact">
+        <h2 class="contact__title">Contacto <span>!</span></h2>
+
+        <form action="#" class="contact__form">
+            <div class="contact__form__box">
+                <div class="contact__form__box__field"">
+                    <input type="text" placeholder="Nombre" required>
+                    <span class="focus__bord"></span>
+                </div>
+                <div class="contact__form__box__field"">
+                    <input type="text" placeholder="E-mail" required>
+                    <span class="focus__bord"></span>
+                </div>
+            </div>
+
+            <div class="contact__form__box">
+                <div class="contact__form__box__field">
+                    <input type="number" placeholder="Teléfono" required>
+                    <span class="focus__bord"></span>
+                </div>
+                <div class="contact__form__box__field">
+                    <input type="text" placeholder="Asunto del E-mail" required>
+                    <span class="focus__bord"></span>
+                </div>
+            </div>
+
+            <div class="contact__form__textarrea">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Su mensaje"></textarea>
+                <span class="focus__bord"></span>
+            </div>
+
+            <div class="contact__form__btn btns">
+                <button type="submit" class="contact__form__btn__subnit"> Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <!--Pie de pàgina-->
+    <footer class="footer">
+        <div class="footer__text">
+            <p>Copyright &copy; 2025 <span>Wynsley-j</span> | Todos los derechos reservados. </p>
+        </div>
+        <div class="Footer__icontop">
+            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+
+    <script src="/public/js/script.js"></script>
+
+</body>
+</html>
