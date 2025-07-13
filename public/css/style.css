@@ -35,8 +35,8 @@
 }
 
 :root{
-    --bg-color: #02131f;
-    --second-bg-color: #072437;
+    --bg-color: #020f18;
+    --second-bg-color: #031624;
     --text-color:#ededed;
     --main-color: #15ff00;
     --skills-color:#071a29;
@@ -239,9 +239,10 @@ body{
     transition: .3s;
 }
 
-.navbar__list__link:hover,
-.navbar__link.active{
+.navbar .navbar__list__link:hover,
+.navbar__list__link.active{
     color: var(--main-color);
+    text-shadow: 0 0 2px var(--main-color);
     
 }
 
@@ -285,7 +286,7 @@ section{
 
 .home__Content .home__content__animate{
     position: relative;
-    width: 36.8rem;
+    width: 34.8rem;
 
 }
 
@@ -297,7 +298,7 @@ section{
     background-image: linear-gradient(var(--main-color));
     background-repeat: no-repeat;
     -webkit-background-clip: text;
-    background-position: -37rem 0;
+    background-position: -35rem 0;
     animation: homeBgText 8s linear infinite;
     animation-delay: 2s;
 }
@@ -645,21 +646,17 @@ svg{
 }
 
 /*Aplicar porcentajes a las habilidades*/
-.skills__main__left__var .bar .html{
-    width: 80%;
-    animation: html 2s;
+.skills__main__left__var .bar .html.animar{
+    animation: html 3s forwards;
 }
-.skills__main__left__var .bar .css{
-    width: 70%;
-    animation: css 3s;
+.skills__main__left__var .bar .css.animar{
+    animation: css 3s forwards;
 }
-.skills__main__left__var .bar .javascript{
-    width: 40%;
-    animation: javascript 4s;
+.skills__main__left__var .bar .javascript.animar{ 
+    animation: javascript 3s forwards;
 }
-.skills__main__left__var .bar .figma{
-    width: 40%;
-    animation: figma 5s;
+.skills__main__left__var .bar .figma.animar{
+    animation: figma 3s forwards;
 }
 
 
@@ -936,12 +933,18 @@ svg{
 
 .project__container{
 
-    margin: 0 8rem 0 8rem;
+    margin: 0 6rem 0 6rem;
 }
 .projects__container__filtrer{
     margin: 2rem 0 1.5rem 0;
     text-align: center;
 
+}
+
+.projects__container__filtrer  a .active1{
+    color: var(--main-color);
+    font-weight: bold;
+    text-decoration: underline;
 }
 .projects__container__filtrer__btn{
     background: none;
@@ -966,16 +969,13 @@ svg{
 }
 
 .projects__container__gallery{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
 }
 .projects__container__gallery__port--box{
     position: relative;
-    flex: 2 2 30rem;
-    height: 26rem;
+    height: 25rem;
     border-radius: 15px;
     overflow: hidden;
     background: #072437;
@@ -1169,8 +1169,9 @@ svg{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding: 3rem 9%;
+    padding: 2rem 9%;
     background-color:black;
+    box-shadow: 0 0 10px var(--main-color);
 }
 
 .footer__text p{
@@ -1222,31 +1223,7 @@ width: 100%;
 
 /*Recarga y desplazamiento de la animación -----------------------------*/
 
-.animateLo{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 100%;
-    background: #045e70;
-    z-index: 98;
-}
-
-.header__logo__name .animateLo,
-.navbar .animateLo,
-#menu-icon .animateLo{
-animation: showRight 1s easee forwards;
-animation-delay: calc(.3s * var(--i));
-}
-
-@keyframes showRight{
-    0%{
-        width: 100% ;
-    }
-}
-
-
- /*Paralage*/   
+   
 
 .scroll-scale{
     opacity:1 ;
@@ -1275,6 +1252,11 @@ animation-delay: calc(.3s * var(--i));
     html{
         font-size: 50%;
     }
+
+    .project__container{
+    margin: 0 4rem 0 4rem;
+    }
+    
    
 }
 
@@ -1295,6 +1277,19 @@ animation-delay: calc(.3s * var(--i));
 
     .home{
         padding: 0 4%;
+    }
+
+    .project__container{
+    margin: 0 4rem 0 4rem;
+    }
+
+    .projects__container__gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    }
+    .projects__container__gallery__port--box{
+        height: 25rem;
     }
 
     .footer{
@@ -1324,11 +1319,9 @@ animation-delay: calc(.3s * var(--i));
    }
    .navbar{
     position: absolute;
-    display: flex;
     top: -1000px;
     left: 0;
     right: 0;
-    flex-direction: column;
     background: var(--bg-color);
     box-shadow: 0 .5rem 1rem rgba(42, 255, 4, 0.715);
     text-align: left;
@@ -1337,7 +1330,12 @@ animation-delay: calc(.3s * var(--i));
     
    }
 
-   .navbar__link {
+   .navbar__List{
+    display: flex;
+    flex-direction: column;
+    padding-top: .8rem;
+   }
+   .navbar__list__link {
     display: block;
     font-size: 2rem;
     padding-bottom: 2rem;
@@ -1435,6 +1433,17 @@ animation-delay: calc(.3s * var(--i));
     .projects__container__filtrer{
         margin: 2.5rem 0;
     }
+
+     .project__container{
+    margin: 0 4rem 0 4rem;
+    }
+
+    .projects__container__gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    }
+    
 }
 
 @media (max-width: 550px){
@@ -1522,6 +1531,19 @@ animation-delay: calc(.3s * var(--i));
     height: 35rem;
    }
 
+    .project__container{
+    margin: 0 3rem 0 3rem;
+    }
+
+    .projects__container__gallery{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    }
+    .projects__container__gallery__port--box{
+        height: 20rem;
+    }
+
 }
 
 @media (max-width: 420px){
@@ -1554,6 +1576,19 @@ animation-delay: calc(.3s * var(--i));
     .home__Content scroll-scale
     .footer p{
         font-size: 1rem;
+    }
+
+     .project__container{
+    margin: 0 4rem 0 4rem;
+    }
+
+    .projects__container__gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    }
+    .projects__container__gallery__port--box{
+        height: 25rem;
     }
     
 }
@@ -1588,7 +1623,7 @@ animation-delay: calc(.3s * var(--i));
     0%, 
     10%,
     100%{
-        background-position: -37rem 0;
+        background-position: -35rem 0;
     }
 
     65%, 
@@ -1625,34 +1660,34 @@ animation-delay: calc(.3s * var(--i));
 
 /*Habilidades: porcentages linea */
 @keyframes html {
-    0%{
+    from{
         width: 0%;
     }
-    100%{
+    to{
         width:80% ;
     }
 }
 @keyframes css {
-    0%{
+    from{
         width: 0%;
     }
-    100%{
+    to{
         width:70% ;
     }
 }
 @keyframes javascript {
-    0%{
+    from{
         width: 0%;
     }
-    100%{
+    to{
         width:40% ;
     }
 }
 @keyframes figma {
-    0%{
+    from{
         width: 0%;
     }
-    100%{
+    to{
         width:40% ;
     }
 }
@@ -1667,4 +1702,21 @@ animation-delay: calc(.3s * var(--i));
         background: var(--main-color);
         box-shadow: 0 0 10px var(--main-color);
     }
+}
+
+/*Secciones: reiniciar aimaciones*/
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skills .animar{
+   animation: aparecer 1s ease forwards; 
 }

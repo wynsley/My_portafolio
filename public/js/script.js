@@ -46,16 +46,16 @@ window.onscroll = () => {
         }    
     })
 
-
     //encabezado fijo
     const header = document.getElementById('idHeader')
-
     header.classList.toggle('sticky', window.scrollY > 100)
 }
 
-//habilidades: completar el porcentaje de Circulo  ==============================================================
 
-const circles = document.querySelectorAll ('.skills__main__right__profecnl__box__circle')
+
+//habilidades: completar el porcentaje de Circulo  ==============================================================
+function animarCircles (){
+    const circles = document.querySelectorAll ('.skills__main__right__profecnl__box__circle')
 circles.forEach(elem => {
     let dots = elem.getAttribute("data-dots")
     let marked = elem.getAttribute("data-percent")
@@ -64,7 +64,7 @@ circles.forEach(elem => {
     let rotate = 360 / dots;
 
     for ( let i = 0 ; i < dots ; i++){
-        points = points + `<div class="points" style="--i:${i};--rot:${rotate}deg"></div>`;
+        points += `<div class="points" style="--i:${i};--rot:${rotate}deg"></div>`;
     }
     elem.innerHTML = points;
 
@@ -74,6 +74,50 @@ circles.forEach(elem => {
     }
 
 })
+
+}
+
+//Scroll habilidades -------------------------------------------
+function reiniciarAnimaciones() {
+  const barras = document.querySelectorAll("#skills .bar span");
+
+  barras.forEach(span => {
+    span.classList.remove("animar");
+    void span.offsetWidth;
+    span.classList.add("animar");
+  });
+
+  animarCircles()
+}
+
+// Clic manual con scroll suave
+const btnHabilidades = document.getElementById("skills");
+if (btnHabilidades) {
+  btnHabilidades.addEventListener("click", (e) => {
+    e.preventDefault(); // <- detiene el salto automático
+    document.querySelector("#skills").scrollIntoView({ behavior: "smooth" });
+
+    // Espera a que el scroll termine antes de reiniciar animación
+    setTimeout(() => {
+      reiniciarAnimaciones();
+    }, 500);
+  });
+}
+
+// Scroll automático (por scroll natural del usuario)
+const skillsSection = document.getElementById("skills");
+if (skillsSection) {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        reiniciarAnimaciones();
+      }
+    });
+  }, { threshold: 0.6 });
+
+  observer.observe(skillsSection);
+}
+
 
 // Proyectos: Cambiar el tipo activo a los botones al momento de hacer clic
 
@@ -88,6 +132,36 @@ options.forEach( option => {
         option.classList.add('active1')
     })
 })
+
+//Proyectos: opciones
+
+document.addEventListener("DOMContentLoaded", () => {
+  const enlaces = document.querySelectorAll(".projects__container__filtrer .projects__container__filtrer__btn");
+  const proyectos = document.querySelectorAll(".projects__container__gallery__port--box");
+
+  
+  // Evita que salte arriba en la página
+  enlaces.forEach(enlace => {
+    enlace.addEventListener("click", e => {
+      e.preventDefault();  
+
+      const filtro = enlace.getAttribute("data-filter");
+
+      // Activar sólo el enlace presionado
+      enlaces.forEach(a => a.classList.remove("activo"));
+      enlace.classList.add("activo");
+
+      proyectos.forEach(proyecto => {
+        if (filtro === "all") {
+          proyecto.style.display = "block";
+        } else {
+          proyecto.style.display = proyecto.classList.contains(filtro) ? "block" : "none";
+        }
+      });
+    });
+  });
+});
+
 
 
 //Paralage ==========================================================
