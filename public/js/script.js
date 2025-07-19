@@ -56,7 +56,7 @@ window.onscroll = () => {
 //habilidades: completar el porcentaje de Circulo  ==============================================================
 function animarCircles (){
     const circles = document.querySelectorAll ('.skills__main__right__profecnl__box__circle')
-circles.forEach(elem => {
+        circles.forEach(elem => {
     let dots = elem.getAttribute("data-dots")
     let marked = elem.getAttribute("data-percent")
     let percent = Math.floor(dots*marked/100)
@@ -164,23 +164,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-//Paralage ==========================================================
-
-const observer = new IntersectionObserver((entradas) => {
-    entradas.forEach((entrada) => {
-        if(entrada.isIntersecting){
-            entrada.target.classList.add("show-items");
-        }else{
-            entrada.target.classList.remove("show-items");
-        }
-    });
-});
-
-const scrollScale = document.querySelectorAll("scroll-scale");
-scrollScale.forEach((el) =>observer.observe(el));
-
-const scrollBottom = document.querySelectorAll("scroll_bottom");
-scrollBottom.forEach((el) =>observer.observe(el));
-
-const scrollTop = document.querySelectorAll("scroll_top");
-scrollTop.forEach((el) =>observer.observe(el));
