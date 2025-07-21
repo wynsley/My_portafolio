@@ -1547,6 +1547,25 @@ width: 100%;
     .header__logo__name{
         font-size: 1.5rem;
     }
+    .header__logo{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-left: 1rem;
+    align-items: center;
+    gap: 2rem;
+    }
+    
+    .header__logo__animate__black {
+      display:none;
+    }
+    
+    .header__logo__animate__blue{
+      display:none;
+      }
+      
+    .header__logo__name{
+        font-size: 1.8rem;
+    }
     .home{
         
         justify-content: center;

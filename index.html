@@ -461,7 +461,7 @@
 
             <div class="contact__form__box">
                 <div class="contact__form__box__field">
-                    <input type="number" placeholder="Teléfono" required>
+                    <input type="tel" placeholder="Teléfono" required  oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                     <span class="focus__bord"></span>
                 </div>
                 <div class="contact__form__box__field">
