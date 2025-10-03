@@ -1,87 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portafolio</title>
-    <link rel="stylesheet" href="/public/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portafolio</title>
+  <link rel="stylesheet" href="/public/css/style.css">
 
-    <!--box icons-->
-   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!--box icons-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    
-<!--diseño encabezado-->
-    <header class="header" id="idHeader">
-        <div class="header__logo">
-            <div class="header__logo__animate">
-                <div class="header__logo__animate__green--4 flame"></div>
-                <div class="header__logo__animate__green--1 flame"></div>
-                <div class="header__logo__animate__green--2 flame"></div>
-                <div class="header__logo__animate__green--3 flame"></div>
-                <div class="header__logo__animate__white flame"></div>
-                <div class="header__logo__animate__blue circle"></div>
-                <div class="header__logo__animate__black circle"></div>
-            </div>
-            
-            <a href="/" class="header__logo__name">Wynsley</a>
-        </div>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
+  <!--diseño encabezado-->
+  <header class="header" id="idHeader">
+    <div class="header__logo">
+      <div class="header__logo__animate">
+        <div class="header__logo__animate__green--4 flame"></div>
+        <div class="header__logo__animate__green--1 flame"></div>
+        <div class="header__logo__animate__green--2 flame"></div>
+        <div class="header__logo__animate__green--3 flame"></div>
+        <div class="header__logo__animate__white flame"></div>
+        <div class="header__logo__animate__blue circle"></div>
+        <div class="header__logo__animate__black circle"></div>
+      </div>
 
-        <nav class="navbar" id="navbar">
-            <ul class="navbar__List">
-                <li><a href="#home" class="navbar__list__link active ">Inicio</a></li>
-                <li><a href="#about " class="navbar__list__link ">Sobre mi</a></li>
-                <li><a href="#skills" class="navbar__list__link " id="btnSkills">Habilidades</a></li>
-                <li><a href="#experience" class="navbar__list__link ">Experiencia</a></li>
-                <li><a href="#project" class="navbar__list__link ">Proyectos</a></li>
-                <li><a href="#contact" class="navbar__list__link ">Contacto</a></li>
-            </ul>
+      <a href="/" class="header__logo__name">Wynsley</a>
+    </div>
 
-            <span class="active-nav"></span>
-           
-        </nav>
-    </header>
+    <i class='bx bx-menu' id="menu-icon"></i>
 
-    <!-- seccion de inicio-------------------------------------------------------------------------------->  
-    <section class="home " id="home">
-        <div class="home__Content scroll-scale">
-            <h1 >Hola, soy <span>Wynsley Durán</span></h1>
-            <div class="home__content__animate">
-                <h3>Desarrollador Frontend</h3>
-            </div>
-            <p>
-                Mi trabajo no solo se trata de escribir código, sino de contruir interfaces
-                que conecte, que transmitan confianza y que conviertan visitantes en usuarios satisfechos.
-                Si buscas a alguien que no solo programe, sino que entienda lo que tu proyecto necesita 
-                para destacar y ser recordado aquí me tienes.
-            </p>
-            <div class="home__content__btn-box">
-                <a href="#" class="home__content__btn-box__button">Contrátame</a>
-                <a href="#" class="home__content__btn-box__button">Hablemos</a>
-            </div>
-        </div>
+    <nav class="navbar" id="navbar">
+      <ul class="navbar__List">
+        <li><a href="#home" class="navbar__list__link active ">Inicio</a></li>
+        <li><a href="#about " class="navbar__list__link ">Sobre mi</a></li>
+        <li><a href="#skills" class="navbar__list__link " id="btnSkills">Habilidades</a></li>
+        <li><a href="#experience" class="navbar__list__link ">Experiencia</a></li>
+        <li><a href="#project" class="navbar__list__link ">Proyectos</a></li>
+        <li><a href="#contact" class="navbar__list__link ">Contacto</a></li>
+      </ul>
 
-        <!--redes sociales-->
-        <div class="home__redes">
-            <a href="https://m.me/WynsleyJhackson.Durans<" target="_blank" rel="nooponer noreferrer"><i class='bx bxl-facebook' ></i></a>
-            <a href="https://wa.me/+51921972953?text=Hola,%20vi%20tu%20portafolio%20y%20quiero%20contactarte" target="_blank" rel="nooponer noreferrer"><i class='bx bxl-whatsapp' ></i></a>
-            <a href="https://github.com/wynsley"  target="_blank" rel="nooponer noreferrer"><i class='bx bxl-github'></i></a>
-        </div>
-        
-        <div class="home__image">
-            <div class="home__image__box">
-                <img class="home__image__box__img" src="/public/imgs/img_perfil.png" alt="perfil">
-            </div>
+      <span class="active-nav"></span>
+    </nav>
+  </header>
 
-            <div class="home__image__shape">
-                <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" heigth="100%" id="blobSvg">
-                    <path  fill="#15ff00">
-                        <animate attributeName="d"
-                            dur="10000ms"
-                            repeatCount="indefinite"
-                            values="
+  <!-- seccion de inicio-------------------------------------------------------------------------------->
+  <section class="home " id="home">
+    <div class="home__Content scroll-scale">
+      <h1>Hola, soy <span>Wynsley Durán</span></h1>
+      <div class="home__content__animate">
+        <h3>Desarrollador Frontend</h3>
+      </div>
+      <p>
+        Mi trabajo no solo se trata de escribir código, sino de contruir interfaces
+        que conecte, que transmitan confianza y que conviertan visitantes en usuarios satisfechos.
+        Si buscas a alguien que no solo programe, sino que entienda lo que tu proyecto necesita
+        para destacar y ser recordado aquí me tienes.
+      </p>
+      <div class="home__content__btn-box">
+        <a href="#contact" class="home__content__btn-box__button">Contrátame</a>
+        <a href="https://wa.me/+51921972953?text=Hola,%20vi%20tu%20portafolio%20y%20quiero%20contactarte"
+          target="_blank" class="home__content__btn-box__button">Hablemos</a>
+      </div>
+    </div>
+
+    <!--redes sociales-->
+    <div class="home__redes">
+      <a href="https://m.me/WynsleyJhackson.Durans<" target="_blank" rel="nooponer noreferrer"><i
+          class='bx bxl-facebook'></i></a>
+      <a href="https://wa.me/+51921972953?text=Hola,%20vi%20tu%20portafolio%20y%20quiero%20contactarte" target="_blank"
+        rel="nooponer noreferrer"><i class='bx bxl-whatsapp'></i></a>
+      <a href="https://github.com/wynsley" target="_blank" rel="nooponer noreferrer"><i class='bx bxl-github'></i></a>
+    </div>
+
+    <div class="home__image">
+      <div class="home__image__box">
+        <img class="home__image__box__img" src="/public/imgs/img_perfil.png" alt="perfil">
+      </div>
+
+      <div class="home__image__shape">
+        <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="100%" heigth="100%" id="blobSvg">
+          <path fill="#15ff00">
+            <animate attributeName="d" dur="10000ms" repeatCount="indefinite" values="
                             M399,318.5Q359,387,291.5,376.5Q224,366,158,346Q92,326,95,251.5Q98,177,153,122Q208,67,279,95.5Q350,124,394.5,187Q439,250,399,318.5Z;
 
                             M364,285.5Q306,321,268.5,326.5Q231,332,132,343Q33,354,67,266Q101,178,148,93.5Q195,9,273,66Q351,123,386.5,186.5Q422,250,364,285.5Z;
@@ -91,407 +93,461 @@
                             M438,330.5Q378,411,303,378Q228,345,160,335.5Q92,326,72,240.5Q52,155,134.5,129.5Q217,104,311,79.5Q405,55,451.5,152.5Q498,250,438,330.5Z;
 
                             M427,335.5Q387,421,298,424.5Q209,428,130,387Q51,346,93,270.5Q135,195,176.5,153Q218,111,274.5,130Q331,149,399,199.5Q467,250,427,335.5Z;
-                           
+                        
                             M420,307.5Q342,365,275,399.5Q208,434,174,368.5Q140,303,98.5,230Q57,157,134,118.5Q211,80,277.5,106Q344,132,421,191Q498,250,420,307.5Z;
-                           
+                        
                             M418,337.5Q389,425,306.5,394.5Q224,364,188.5,330.5Q153,297,116,232Q79,167,151,149.5Q223,132,305,105Q387,78,417,164Q447,250,418,337.5Z;
 
                             M382,302Q333,354,277,365Q221,376,163.5,348Q106,320,71,233.5Q36,147,120.5,99Q205,51,299.5,60.5Q394,70,412.5,160Q431,250,382,302Z;
                             M399,318.5Q359,387,291.5,376.5Q224,366,158,346Q92,326,95,251.5Q98,177,153,122Q208,67,279,95.5Q350,124,394.5,187Q439,250,399,318.5Z;
-                            "
-                        />
-                    </path>
-                </svg>
-            </div>
+                            " />
+          </path>
+        </svg>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!--Sobre mi-->
+
+  <section class="about" id="about">
+    <h2 class="about__title">Sobre <span class="about__title--2">Mi!</span></h2>
+
+    <div class="about__img">
+      <img src="/public/imgs/img_perfil.png" alt="Imagene perfil">
+      <span class="about__spin"></span>
+    </div>
+
+    <div class="about__content">
+      <h3 class="about__content__title">Desarrollador Frontend<span>!</span></h3>
+
+      <p class="about__content__description">¡Hola! Soy Wynsley Jhackson, un apacionado desarrollador Frontend
+        enfocado en trasformar ideas en experiencias digitales atractivas y funcionales. Me especializo en
+        constuir
+        interfaces modernas, intuitivas y responsivas dque no solo se ven bien, sino que también funcionen de
+        manera
+        fluida en cualqeuir dispositivo.</p>
+      <article class="about__article">
+        <h3 class="article__values__title">Valores que me Identifican</h3>
+        <div class="article__values__Container">
+          <p class="values">Respeto</p>
+          <p class="values">Responsabilidad</p>
+          <p class="values">Honestidad</p>
+          <p class="values">Compromiso</p>
         </div>
-        
-        
-    </section>
+      </article>
+    </div>
 
-    <!--Sobre mi-->
+  </section>
 
-    <section class="about" id="about">
-        <h2 class="about__title">Sobre  <span class="about__title--2">Mi!</span></h2>
+  <!--------------Habilidades-------------------------------------->
 
-        <div class="about__img">
-            <img src="/public/imgs/img_perfil.png" alt="Imagene perfil">
-            <span class="about__spin"></span>
+  <section class="skills" id="skills">
+
+    <h2 class="skills__title"><span>Mis </span>Habilidades</h2>
+
+    <div class="skills__main">
+      <div class="skills__main__left">
+        <h3> Habilidades Técnicas</h3>
+        <div class="skills__main__left__var">
+          <div class="skills__main__left__var__info">
+            <p>HTML</p>
+            <p>80%</p>
+          </div>
+          <div class="bar">
+            <span class=" html"></span>
+          </div>
+        </div>
+        <div class="skills__main__left__var">
+          <div class="skills__main__left__var__info">
+            <p>CSS</p>
+            <p>70%</p>
+          </div>
+          <div class="bar">
+            <span class=" css"></span>
+          </div>
+        </div>
+        <div class="skills__main__left__var">
+          <div class="skills__main__left__var__info">
+            <p>JavaScript</p>
+            <p>50%</p>
+          </div>
+          <div class="bar">
+            <span class=" javascript"></span>
+          </div>
+        </div>
+        <div class="skills__main__left__var">
+          <div class="skills__main__left__var__info">
+            <p>React</p>
+            <p>60%</p>
+          </div>
+          <div class="bar">
+            <span class=" react"></span>
+          </div>
+        </div>
+        <div class="skills__main__left__var">
+          <div class="skills__main__left__var__info">
+            <p>Python</p>
+            <p>40%</p>
+          </div>
+          <div class="bar">
+            <span class=" python"></span>
+          </div>
+        </div>
+        <div class="skills__main__left__var">
+          <div class="skills__main__left__var__info">
+            <p>Figma</p>
+            <p>45%</p>
+          </div>
+          <div class="bar">
+            <span class="figma"></span>
+          </div>
+        </div>
+      </div>
+      <div class="skills__main__right">
+        <h3> Habilidades Profecionales</h3>
+        <div class="skill__main__rignt_profecnl">
+          <div class="skills__main__right__profecnl__box">
+            <div class="skills__main__right__profecnl__box__circle" id="circle" data-dots="80" data-percent="90"></div>
+            <div class="skills__main__right__profecnl__box__text">
+              <big>90%</big>
+              <small>Trabajo en Equipo</small>
+            </div>
+          </div>
+          <div class="skills__main__right__profecnl__box">
+            <div class="skills__main__right__profecnl__box__circle" id="circle" data-dots="80" data-percent="80"></div>
+            <div class="skills__main__right__profecnl__box__text">
+              <big>80%</big>
+              <small>Creatividad</small>
+            </div>
+          </div>
+
+          <div class="skills__main__right__profecnl__box">
+            <div class="skills__main__right__profecnl__box__circle" id="circle" data-dots="80" data-percent="70"></div>
+            <div class="skills__main__right__profecnl__box__text">
+              <big>70%</big>
+              <small>Comunicación</small>
+            </div>
+          </div>
+
+          <div class="skills__main__right__profecnl__box">
+            <div class="skills__main__right__profecnl__box__circle" id="circle" data-dots="80" data-percent="50"></div>
+            <div class="skills__main__right__profecnl__box__text">
+              <big>50%</big>
+              <small>Gestión de Proyectos</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Experiencia------------------------------------------------------------------>
+
+  <section class="experience" id="experience">
+    <h2 class="experience__title"> Mi <span>viaje</span></h2>
+
+    <div class="experience-row">
+      <div class="experince-row__column">
+        <h3 class="experince-row__column__title">Experiencia</h3>
+
+        <div class="experince-row__column__box">
+          <div class="experince-row__column__box__content">
+            <div class="experince-row__column__box__content__cnt">
+              <div class="experince-row__column__box__content__cnt__year"><i class='bx bxs-calendar'></i>
+                2025-2026</div>
+              <h3>Desarrollo y Diseño Web</h3>
+              <p>He desarrollado sitios web utilizando HTML, CSS y JavaScript, combinando herramientas de
+                diseño como Figma
+                y Balsamiq para la creación de prototipos y estructuras visuales. Uno de los principales
+                proyectos ha sido
+                el diseño y desarrollo de la página web institucional de mi centro de estudios,
+                integrando tanto la parte
+                visual como funcional del sitio.</p>
+            </div>
+          </div>
+          <div class="experince-row__column__box__content">
+            <div class="experince-row__column__box__content__cnt">
+              <div class="experince-row__column__box__content__cnt__year"><i class='bx bxs-calendar'></i>
+                2025-2026</div>
+              <h3>Gestión de Redes</h3>
+              <p>Tengo conocimientos en subnetting de redes, instalación y configuración de routers y
+                switches, así como
+                en el diseño y simulación de redes utilizando herramientas como Cisco Packet Tracer y
+                GNS3. También realizo
+                el cambio y armado de cables RJ45 según el tipo de conexión requerida, asegurando la
+                correcta conectividad y
+                funcionamiento de la infraestructura de red.</p>
+            </div>
+          </div>
+          <div class="experince-row__column__box__content">
+            <div class="experince-row__column__box__content__cnt">
+              <div class="experince-row__column__box__content__cnt__year"><i class='bx bxs-calendar'></i>
+                2026-2027</div>
+              <h3>Soporte Técnico</h3>
+              <p>Cuento con experiencia en la instalación de programas, antivirus y sistemas operativos,
+                así como en el
+                formateo de PCs y laptops. Además, realizo cambios de componentes como discos duros y
+                memorias RAM, y
+                aplico mantenimiento para garantizar el buen funcionamiento y la
+                optimización de los equipos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experince-row__column">
+        <h3 class="experince-row__column__title">Educación</h3>
+
+        <div class="experince-row__column__box">
+          <div class="experince-row__column__box__content">
+            <div class="experince-row__column__box__content__cnt">
+              <div class="experince-row__column__box__content__cnt__year"><i class='bx bxs-calendar'></i>
+                2024-2025</div>
+              <h3>Instituto Privado Celendín</h3>
+              <p>Durante mis primeros dos semestres he desarrollado conocimientos en soporte técnico,
+                mantenimiento de hardware
+                y software, así como en redes. Manejo conceptos de diseño y gestión de redes,
+                configuración de dispositivos,
+                subneteo (subnetting) y conectividad básica, lo que me permite identificar y resolver
+                fallas tanto a nivel de
+                equipos como de infraestructura de red.</p>
+            </div>
+          </div>
+          <div class="experince-row__column__box__content">
+            <div class="experince-row__column__box__content__cnt">
+              <div class="experince-row__column__box__content__cnt__year"><i class='bx bxs-calendar'></i>
+                2025-2026</div>
+              <h3>Instituto Privado Celendín</h3>
+              <p>En los semestres 25-26 he fortalecido mis conocimientos en desarrollo de software,
+                utilizando herramientas
+                como HTML, CSS, JavaScript y Python. He trabajado en la creación de prototipos con
+                Balsamiq y Figma, diseño
+                en UML, y he adquirido bases en el manejo de bases de datos con SQL Server.</p>
+            </div>
+          </div>
+          <div class="experince-row__column__box__content">
+            <div class="experince-row__column__box__content__cnt">
+              <div class="experince-row__column__box__content__cnt__year"><i class='bx bxs-calendar'></i>
+                2026-2027</div>
+              <h3>Instituto Privado Celendín</h3>
+              <p>Durante los semestres 26-27 he adquirido conocimientos en diseño gráfico y edición y
+                producción de video, así como en
+                el uso de herramientas de desarrollo como Unreal Engine y tecnologías web como HTML,
+                CSS, JavaScript y
+                Express, MySQL y SQL Serve, integrando tanto el aspecto visual como funcional en
+                proyectos interactivos .</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Servicios-->
+      <div class="services">
+        <h3 class="services__title">Nuestros <span>Sevicios</span></h3>
+
+        <div class="services__container ">
+          <div class="services__container__box">
+            <i class='bx bx-code-alt'></i>
+            <h4>Desarrollo Web</h4>
+            <p>Diseño y desarrollo páginas web modernas, dinámicas y responsivas, adaptadas a distintos dispositivos.
+              Trabajo con tecnologías actuales como React y Node.js para garantizar rendimiento y escalabilidad.
+              Mi objetivo es crear sitios funcionales que ofrezcan una excelente experiencia de usuario.</p>
+            <a href="#" class="services__container__box__btn modal-link" > Leer Más</a>
+          </div>
+
+          <!--MODAL-->
+
+          <div class="modal" id="modal">
+            <div class="modal-content">
+              <span class="close-btn" id="closeModal">&times;</span>
+              <p>En proceso...</p>
+            </div>
+          </div>
+
+          <div class="services__container__box">
+            <i class='bx bx-paint'></i>
+            <h4>Diseño Gráfico</h4>
+            <p>Elaboro diseños creativos y profesionales que transmiten identidad y estilo propio.
+              Desde logotipos hasta material publicitario, cuido cada detalle visual con herramientas como Figma y
+              Photoshop.
+              Busco siempre comunicar de forma clara y reforzar la presencia de cada marca.</p>
+            <a href="#" class="services__container__box__btn modal-link" id="openModal"> Leer Más</a>
+          </div>
+
+          <div class="services__container__box">
+            <i class='bx bx-network-chart'></i>
+            <h4>Gestión de Redes</h4>
+            <p>Brindo servicios de configuración, administración y mantenimiento de redes informáticas.
+              Incluye instalación de equipos, cableado estructurado y optimización de la conectividad.
+              Mi meta es garantizar un funcionamiento estable, seguro y eficiente de la infraestructura tecnológica.</p>
+            <a href="#" class="services__container__box__btn modal-link" id="openModal"> Leer Más</a>
+          </div>
+
+          <div class="services__container__box">
+            <i class='bx bxs-wrench'></i>
+            <h4>Soporte Técnico</h4>
+            <p>Ofrezco soluciones para mantener equipos seguros y en óptimo funcionamiento, incluyendo
+              configuración de antivirus, actualizaciones de seguridad y asistencia personalizada, además de la
+              instalación y actualización de programas y sistemas operativos.</p>
+            <a href="#" class="services__container__box__btn modal-link" id="openModal"> Leer Más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Proyectos------------------------------------------------------------------------------->
+
+  <section class="project" id="project">
+    <h2 class="project__title"> Mis <span>Proyectos</span></h2>
+
+    <div class="project__container">
+      <div class="projects__container__filtrer">
+        <a href="#" class="projects__container__filtrer__btn active1" data-filter="all">Todo</a>
+        <a href="#" class="projects__container__filtrer__btn" data-filter="product">Productos</a>
+        <a href="#" class="projects__container__filtrer__btn" data-filter="design">Diseños</a>
+        <a href="#" class="projects__container__filtrer__btn" data-filter="web">App Web</a>
+      </div>
+
+      <div class="projects__container__gallery">
+        <div class="projects__container__gallery__port--box  web ">
+          <div class="projects__container__gallery__port--box__img">
+            <img src="/public/imgs/project1.jpg" alt="Imagene-proyecto1">
+          </div>
+          <div class="projects__container__gallery__port--box__content">
+            <h3>Sitio Web IPC</h3>
+            <p>
+              El sitio web institucional fue desarrollado con React para ofrecer información clara sobre
+              la institución, incluyendo su historia, misión, visión y programas académicos. Su diseño moderno
+              y responsivo permite una navegación sencilla y una experiencia amigable para estudiantes, docentes y
+              visitantes.
+            </p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
         </div>
 
-        <div class="about__content">
-            <h3 class="about__content__title">Desarrollador Frontend!</h3>
-
-            <p class="about__content__description">¡Hola! Soy Wynsley Jhackson, un apacionado desarrollador Frontend
-                enfocado en trasformar ideas en experiencias digitales atractivas y funcionales. Me especializo en constuir
-                interfaces modernas, intuitivas y responsivas dque no solo se ven bien, sino que también funcionen de manera
-                fluida en cualqeuir dispositivo.</p>
-
-            <div class="about__content__box btns">
-                <a href="#" class="about__content__box__btn">Leer más</a>
-            </div>
+        <div class="projects__container__gallery__port--box  web">
+          <div class="projects__container__gallery__port--box__img">
+            <img src="/public/imgs/project2.jpg" alt="Imagene-proyecto2">
+          </div>
+          <div class="projects__container__gallery__port--box__content">
+            <h3>Desarrollo web</h3>
+            <p>
+              Proyecto desarrollado con React, enfocado en la presentación
+              y difusión informativa de una institución. Cuenta con un diseño moderno,
+              responsivo y fácil de navegar, priorizando la accesibilidad y la experiencia del usuario.
+            </p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
         </div>
 
-    </section>
-
-    <!--------------Habilidades-------------------------------------->
-
-    <section class="skills" id="skills">
-        
-        <h2 class="skills__title"><span>Mis </span>Habilidades</h2>
-
-        <div class="skills__main">
-            <div class="skills__main__left">
-                <h3> Habilidades Técnicas</h3>
-                <div class="skills__main__left__var">
-                    <div class="skills__main__left__var__info">
-                        <p>HTML</p>
-                        <p>80%</p>
-                    </div>
-                    <div class="bar">
-                        <span class=" html"></span>
-                    </div>
-                </div>
-                <div class="skills__main__left__var">
-                    <div class="skills__main__left__var__info">
-                        <p>CSS</p>
-                        <p>70%</p>
-                    </div>
-                    <div class="bar">
-                        <span class=" css" ></span>
-                    </div>
-                </div>
-                <div class="skills__main__left__var">
-                    <div class="skills__main__left__var__info">
-                        <p>JavaScript</p>
-                        <p>40%</p>
-                    </div>
-                    <div class="bar">
-                        <span class=" javascript" ></span>
-                    </div>
-                </div>
-                <div class="skills__main__left__var">
-                    <div class="skills__main__left__var__info">
-                        <p>Figma</p>
-                        <p>40%</p>
-                    </div>
-                    <div class="bar">
-                        <span class=" figma"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="skills__main__right">
-                <h3> Habilidades Profecionales</h3>
-                <div class="skill__main__rignt_profecnl">
-                    <div class="skills__main__right__profecnl__box">
-                        <div class="skills__main__right__profecnl__box__circle" id="circle" data-dots="80" data-percent="90"></div>
-                        <div class="skills__main__right__profecnl__box__text">
-                            <big>90%</big>
-                            <small>Trabajo en Equipo</small>
-                        </div>
-                    </div>
-                    <div class="skills__main__right__profecnl__box">
-                        <div class="skills__main__right__profecnl__box__circle" id="circle" data-dots="80" data-percent="80"></div>
-                        <div class="skills__main__right__profecnl__box__text">
-                            <big>80%</big>
-                            <small>Creatividad</small>
-                        </div>
-                    </div>
-
-                    <div class="skills__main__right__profecnl__box">
-                        <div class="skills__main__right__profecnl__box__circle" id="circle" data-dots="80" data-percent="70"></div>
-                        <div class="skills__main__right__profecnl__box__text">
-                            <big>70%</big>
-                            <small>Comunicación</small>
-                        </div>
-                    </div>
-
-                    <div class="skills__main__right__profecnl__box">
-                        <div class="skills__main__right__profecnl__box__circle" id="circle" data-dots="80" data-percent="50"></div>
-                        <div class="skills__main__right__profecnl__box__text">
-                            <big>50%</big>
-                            <small>Gestión de Proyectos</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="projects__container__gallery__port--box  design">
+          <div class="projects__container__gallery__port--box__img">
+            <img src="/public/imgs/project3.jpeg" alt="Imagene-proyecto3">
+          </div>
+          <div class="projects__container__gallery__port--box__content">
+            <h3>Diseño web</h3>
+            <p>
+              Realicé el diseño de la interfaz en Figma, cuidando la estética y la usabilidad.
+              El prototipo incluye componentes reutilizables, colores institucionales y una navegación intuitiva.
+            </p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
         </div>
-    </section>
 
-    <!--Experiencia------------------------------------------------------------------>
-
-    <section class="experience" id="experience">
-        <h2 class="experience__title"> Mi <span>viaje</span></h2>
-
-        <div class="experience-row">
-            <div class="experince-row__column">
-                <h3 class="experince-row__column__title">Experiencia</h3>
-
-                 <div class="experince-row__column__box">
-                    <div class="experince-row__column__box__content">
-                        <div class="experince-row__column__box__content__cnt">
-                            <div class="experince-row__column__box__content__cnt__year"><i class='bx bxs-calendar'></i> 2025-2026</div>
-                            <h3>Desarrollo y Diseño Web</h3>
-                            <p>He desarrollado sitios web utilizando HTML, CSS y JavaScript, combinando herramientas de diseño como Figma
-                                 y Balsamiq para la creación de prototipos y estructuras visuales. Uno de los principales proyectos ha sido
-                                  el diseño y desarrollo de la página web institucional de mi centro de estudios, integrando tanto la parte
-                                   visual como funcional del sitio.</p>
-                        </div>
-                    </div>
-                    <div class="experince-row__column__box__content">
-                        <div class="experince-row__column__box__content__cnt">
-                            <div class="experince-row__column__box__content__cnt__year"><i class='bx bxs-calendar'></i> 2025-2026</div>
-                            <h3>Gestión de Redes</h3>
-                            <p>Tengo conocimientos en subnetting de redes, instalación y configuración de routers y switches, así como 
-                                en el diseño y simulación de redes utilizando herramientas como Cisco Packet Tracer y GNS3. También realizo 
-                                el cambio y armado de cables RJ45 según el tipo de conexión requerida, asegurando la correcta conectividad y
-                                 funcionamiento de la infraestructura de red.</p>
-                        </div>
-                    </div>
-                    <div class="experince-row__column__box__content">
-                        <div class="experince-row__column__box__content__cnt">
-                            <div class="experince-row__column__box__content__cnt__year"><i class='bx bxs-calendar'></i> 2026-2027</div>
-                            <h3>Soporte Técnico</h3>
-                            <p>Cuento con experiencia en la instalación de programas, antivirus y sistemas operativos, así como en el
-                                 formateo de PCs y laptops. Además, realizo cambios de componentes como discos duros y memorias RAM, y 
-                                 aplico mantenimiento para garantizar el buen funcionamiento y la 
-                                 optimización de los equipos.</p>
-                        </div>
-                    </div>
-                 </div>   
-            </div>
-            <div class="experince-row__column">
-                <h3 class="experince-row__column__title">Educación</h3>
-
-                 <div class="experince-row__column__box">
-                    <div class="experince-row__column__box__content">
-                        <div class="experince-row__column__box__content__cnt">
-                            <div class="experince-row__column__box__content__cnt__year"><i class='bx bxs-calendar'></i> 2024-2025</div>
-                            <h3>Instituto Privado Celendín</h3>
-                            <p>Durante mis primeros dos semestres he desarrollado conocimientos en soporte técnico, mantenimiento de hardware
-                                 y software, así como en redes. Manejo conceptos de diseño y gestión de redes, configuración de dispositivos, 
-                                 subneteo (subnetting) y conectividad básica, lo que me permite identificar y resolver fallas tanto a nivel de 
-                                 equipos como de infraestructura de red.</p>
-                        </div>
-                    </div>
-                    <div class="experince-row__column__box__content">
-                        <div class="experince-row__column__box__content__cnt">
-                            <div class="experince-row__column__box__content__cnt__year"><i class='bx bxs-calendar'></i> 2025-2026</div>
-                            <h3>Instituto Privado Celendín</h3>
-                            <p>En los semestres 25-26 he fortalecido mis conocimientos en desarrollo de software, utilizando herramientas
-                                 como HTML, CSS, JavaScript y Python. He trabajado en la creación de prototipos con Balsamiq y Figma, diseño 
-                                 en UML, y he adquirido bases en el manejo de bases de datos con SQL Server.</p>
-                        </div>
-                    </div>
-                    <div class="experince-row__column__box__content">
-                        <div class="experince-row__column__box__content__cnt">
-                            <div class="experince-row__column__box__content__cnt__year"><i class='bx bxs-calendar'></i> 2026-2027</div>
-                            <h3>Instituto Privado Celendín</h3>
-                            <p>Durante los semestres 26-27 he adquirido conocimientos en diseño gráfico y edición y producción de video, así como en 
-                                el uso de herramientas de desarrollo como Unreal Engine y tecnologías web como HTML, CSS, JavaScript y 
-                                Express, MySQL y SQL Serve, integrando tanto el aspecto visual como funcional en proyectos interactivos .</p>
-                        </div>
-                    </div>
-                 </div>   
-            </div>
-            
-            <!--Servicios-->
-            <div class="services">
-                <h3 class="services__title">Nuestros <span>Sevicios</span></h3>
-
-                <div class="services__container ">
-                    <div class="services__container__box">
-                        <i class='bx bx-code-alt' ></i>
-                        <h4>Desarrollo Web</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quisquam similique 
-                            aut mollitia, veniam laborum, molestiae maxime provident debitis nihil in enim odio recusandae nam.</p>
-                        <a href="#" class="services__container__box__btn"> Leer Más</a>
-                    </div>
-
-                    <div class="services__container__box">
-                        <i class='bx bx-paint' ></i>
-                        <h4>Diseño Gráfico</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quisquam similique 
-                            aut mollitia, veniam laborum, molestiae maxime provident debitis nihil in enim odio recusandae nam.</p>
-                        <a href="#" class="services__container__box__btn"> Leer Más</a>
-                    </div>
-
-                    <div class="services__container__box">
-                        <i class='bx bx-network-chart' ></i>
-                        <h4>Gestión de Redes</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quisquam similique 
-                            aut mollitia, veniam laborum, molestiae maxime provident blad hat nomiont eirr fiuruete jfdijeu jrt ueroa mpgerien.</p>
-                        <a href="#" class="services__container__box__btn"> Leer Más</a>
-                    </div>
-
-                    <div class="services__container__box">
-                        <i class='bx bxs-wrench'></i>
-                        <h4>Soporte Técnico</h4>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores 
-                            doloremque dicta aut! Officiis, deserunt consequuntur necessitatibus, 
-                            perspiciatis non magnam molestiae autem, est quod iste qui! </p>
-                        <a href="#" class="services__container__box__btn"> Leer Más</a>
-                    </div>
-                </div>
-            </div>
+        <div class="projects__container__gallery__port--box  product">
+          <div class="projects__container__gallery__port--box__img">
+            <img src="/public/imgs/project4.jpg" alt="Imagene-proyecto4">
+          </div>
+          <div class="projects__container__gallery__port--box__content">
+            <h3>Seguridad Informática</h3>
+            <p>
+              En proceso.....
+            </p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
         </div>
-    </section>
 
-    <!--Proyectos------------------------------------------------------------------------------->
-
-    <section class="project" id="project">
-        <h2 class="project__title"> Mis <span>Proyectos</span></h2>
-
-        <div class="project__container">
-            <div class="projects__container__filtrer">
-                <a href="#" class="projects__container__filtrer__btn active1" data-filter="all" >Todo</a>
-                <a href="#" class="projects__container__filtrer__btn" data-filter="product">Productos</a>
-                <a href="#" class="projects__container__filtrer__btn" data-filter="design">Diseños</a>
-                <a href="#" class="projects__container__filtrer__btn" data-filter="web">App Web</a>
-            </div>
-            
-            <div class="projects__container__gallery">
-                <div class="projects__container__gallery__port--box  web " >
-                    <div class="projects__container__gallery__port--box__img">
-                        <img src="/public/imgs/project1.jpg" alt="Imagene-proyecto1">
-                    </div>
-                    <div class="projects__container__gallery__port--box__content">
-                        <h3>Sitio Web IPC</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Cum error sapiente totam praesentium pariatur eligendi
-                             necessitatibus! Totam nemo eius excepturi?
-                        </p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="projects__container__gallery__port--box  web">
-                    <div class="projects__container__gallery__port--box__img">
-                        <img src="/public/imgs/project2.jpg" alt="Imagene-proyecto2">
-                    </div>
-                    <div class="projects__container__gallery__port--box__content">
-                        <h3>Desarrollo web</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Cum error sapiente totam praesentium pariatur eligendi
-                             necessitatibus! Totam nemo eius excepturi?
-                        </p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="projects__container__gallery__port--box  design">
-                    <div class="projects__container__gallery__port--box__img">
-                        <img src="/public/imgs/project3.jpeg" alt="Imagene-proyecto3">
-                    </div>
-                    <div class="projects__container__gallery__port--box__content">
-                        <h3>Diseño web</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Cum error sapiente totam praesentium pariatur eligendi
-                             necessitatibus! Totam nemo eius excepturi?
-                        </p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="projects__container__gallery__port--box  product">
-                    <div class="projects__container__gallery__port--box__img">
-                        <img src="/public/imgs/project4.jpg" alt="Imagene-proyecto4">
-                    </div>
-                    <div class="projects__container__gallery__port--box__content">
-                        <h3>Seguridad Informática</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Cum error sapiente totam praesentium pariatur eligendi
-                             necessitatibus! Totam nemo eius excepturi?
-                        </p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="projects__container__gallery__port--box  design ">
-                    <div class="projects__container__gallery__port--box__img">
-                        <img src="/public/imgs/project5.png" alt="Imagene-proyecto5">
-                    </div>
-                    <div class="projects__container__gallery__port--box__content">
-                        <h3>Diseño Gráfico</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Cum error sapiente totam praesentium pariatur eligendi
-                             necessitatibus! Totam nemo eius excepturi?
-                        </p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-
-                <div class="projects__container__gallery__port--box   web">
-                    <div class="projects__container__gallery__port--box__img">
-                        <img src="/public/imgs/project6.png" alt="Imagene-proyecto6">
-                    </div>
-                    <div class="projects__container__gallery__port--box__content">
-                        <h3>App Movil</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Cum error sapiente totam praesentium pariatur eligendi
-                             necessitatibus! Totam nemo eius excepturi?
-                        </p>
-                        <a href="#"><i class='bx bx-link-external'></i></a>
-                    </div>
-                </div>
-            </div>
+        <div class="projects__container__gallery__port--box  design ">
+          <div class="projects__container__gallery__port--box__img">
+            <img src="/public/imgs/project5.png" alt="Imagene-proyecto5">
+          </div>
+          <div class="projects__container__gallery__port--box__content">
+            <h3>Diseño Gráfico</h3>
+            <p>
+              En proceso.....
+            </p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
         </div>
-    </section>
 
-    <!--Contacto---------------------------------------------------------------------------->
-    <section class="contact" id="contact">
-        <h2 class="contact__title">Contacto <span>!</span></h2>
-
-        <form action="#" class="contact__form">
-            <div class="contact__form__box">
-                <div class="contact__form__box__field"">
-                    <input type="text" placeholder="Nombre" required>
-                    <span class="focus__bord"></span>
-                </div>
-                <div class="contact__form__box__field"">
-                    <input type="text" placeholder="E-mail" required>
-                    <span class="focus__bord"></span>
-                </div>
-            </div>
-
-            <div class="contact__form__box">
-                <div class="contact__form__box__field">
-                    <input type="tel" placeholder="Teléfono" required  oninput="this.value = this.value.replace(/[^0-9]/g, '')">
-                    <span class="focus__bord"></span>
-                </div>
-                <div class="contact__form__box__field">
-                    <input type="text" placeholder="Asunto del E-mail" required>
-                    <span class="focus__bord"></span>
-                </div>
-            </div>
-
-            <div class="contact__form__textarrea">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Su mensaje"></textarea>
-                <span class="focus__bord"></span>
-            </div>
-
-            <div class="contact__form__btn btns">
-                <button type="submit" class="contact__form__btn__subnit"> Enviar</button>
-            </div>
-        </form>
-    </section>
-
-    <!--Pie de pàgina-->
-    <footer class="footer">
-        <div class="footer__text">
-            <p>Copyright &copy; 2025 <span>Wynsley-j</span> | Todos los derechos reservados. </p>
+        <div class="projects__container__gallery__port--box   web">
+          <div class="projects__container__gallery__port--box__img">
+            <img src="/public/imgs/project6.png" alt="Imagene-proyecto6">
+          </div>
+          <div class="projects__container__gallery__port--box__content">
+            <h3>App Movil</h3>
+            <p>
+              En proceso.....
+            </p>
+            <a href="#"><i class='bx bx-link-external'></i></a>
+          </div>
         </div>
-        <div class="Footer__icontop">
-            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!--Contacto---------------------------------------------------------------------------->
+  <section class="contact" id="contact">
+    <h2 class="contact__title">Contacto <span>!</span></h2>
+
+    <form action="#" class="contact__form">
+      <div class="contact__form__box">
+        <div class="contact__form__box__field"">
+                    <input type=" text" placeholder="Nombre" required>
+          <span class="focus__bord"></span>
         </div>
-    </footer>
+        <div class="contact__form__box__field"">
+                    <input type=" text" placeholder="E-mail" required>
+          <span class="focus__bord"></span>
+        </div>
+      </div>
+
+      <div class="contact__form__box">
+        <div class="contact__form__box__field">
+          <input type="tel" placeholder="Teléfono" required oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+          <span class="focus__bord"></span>
+        </div>
+        <div class="contact__form__box__field">
+          <input type="text" placeholder="Asunto del E-mail" required>
+          <span class="focus__bord"></span>
+        </div>
+      </div>
+
+      <div class="contact__form__textarrea">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Su mensaje"></textarea>
+        <span class="focus__bord"></span>
+      </div>
+
+      <div class="contact__form__btn btns">
+        <button type="submit" class="contact__form__btn__subnit"> Enviar</button>
+      </div>
+    </form>
+  </section>
+
+  <!--Pie de pàgina-->
+  <footer class="footer">
+    <div class="footer__text">
+      <p>Copyright &copy; 2025 <span>Wynsley-j</span> | Todos los derechos reservados. </p>
+    </div>
+    <div class="Footer__icontop">
+      <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+  </footer>
 
 
-    <script src="/public/js/script.js"></script>
+  <script src="/public/js/script.js"></script>
 </body>
+
 </html>

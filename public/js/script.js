@@ -118,6 +118,35 @@ if (skillsSection) {
   observer.observe(skillsSection);
 }
 
+//MODAL SERVICIOS
+
+const modal = document.getElementById("modal");
+const closeModal = document.getElementById("closeModal");
+
+// Seleccionamos todos los links con la clase "modal-link"
+const links = document.querySelectorAll(".modal-link");
+
+// Recorremos los links y les agregamos evento de clic
+links.forEach(link => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault(); // evita el salto del link
+    modal.style.display = "flex";
+  });
+});
+
+// Cerrar modal con la X
+closeModal.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+// Cerrar modal clickeando afuera
+window.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+
 
 // Proyectos: Cambiar el tipo activo a los botones al momento de hacer clic
 
